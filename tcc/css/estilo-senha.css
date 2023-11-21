@@ -1,0 +1,87 @@
+body {
+    background-image: url(/img/fundo.png);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#Login {
+    height: 57%; /* Em vez de definir uma altura fixa, use "auto" para que o conteúdo determine a altura */
+    width: 62%; /* Reduza um pouco a largura para se ajustar melhor em dispositivos menores */
+    color: white;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(11, 6, 37, 0.966), rgba(23, 12, 77, 0.966), rgb(4, 6, 133), rgb(7, 10, 177));
+    border: 3px solid black;
+    border-radius: 20px; /* Reduza a borda para 20px para um visual mais suave */
+    padding: 30px;
+    text-align: center;
+    padding-bottom: 45px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#Login img {
+    max-width: 20%; /* Ajuste a imagem para ocupar no máximo 100% da largura do contêiner */
+    height: auto; /* Mantenha a proporção da imagem */
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+input {
+    height: 40px;
+    font-size: 16px;
+    border: 2px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    margin: 9px 0; /* Reduza a margem superior e inferior */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    align-items: center;
+    color: white;
+    background-color: #b30000;
+    cursor: pointer; /* Adicione um cursor de ponteiro quando passar o mouse */
+}
+
+button:hover {
+    background-color: #990000;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para dispositivos com largura de tela menor ou igual a 768px (por exemplo, smartphones) */
+@media (max-width: 999px) {
+    #Login {
+        width: 90%; /* Ajuste a largura para 90% em telas menores */
+    }
+
+    #Login img {
+        width: 40%;/* Reduza a largura máxima da imagem */
+        height: 50%;
+    }
+
+    input {
+        height: 30px; /* Reduza ainda mais a altura dos campos de entrada */
+    }
+
+    button {
+        padding: 8px; /* Reduza ainda mais o preenchimento do botão */
+    }
+}

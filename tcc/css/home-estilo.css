@@ -1,0 +1,115 @@
+body{
+background-color: black;}
+
+/* Estilo para o contêiner da imagem GIF */
+.gif-container {
+    text-align: center; /* Centraliza horizontalmente a imagem */
+    margin: 20px; /* Espaço ao redor do contêiner */
+}
+
+/* Estilo para a imagem GIF */
+.gif-container img {
+    max-width: 100%; /* Impede que a imagem ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco abaixo da imagem */
+}
+
+
+
+.descricao{
+    margin-left: 40px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.descricao p{
+    color: white;
+    text-align: center;
+}
+
+.sobre-site{
+    margin-left: 40px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.sobre-site p{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.caixa-1{
+    margin: 40px;
+
+}
+
+h1{
+    color:rgb(1, 81, 255);;
+    text-align: center;
+    animation: colorChange 4s linear infinite;
+}
+
+
+
+.git {
+    position: relative;
+    width: 100px; 
+    height: 50px;
+    display: flex;
+    align-items: center; /* Alinhamos verticalmente ao centro */
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.git img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.git .name {
+    width: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.git:hover img {
+    transform: translateY(-10px); 
+}
+
+.git:hover .name {
+    opacity: 1;
+}
+
+
+@keyframes colorChange {
+    0% {
+        color:rgb(0, 0, 0),
+    }
+    25% {
+        color:rgba(11, 6, 37, 0.966); 
+    }
+    50% {
+        color: rgb(4, 6, 133)
+    }
+    75% {
+        color: rgb(7, 10, 177)
+    }
+    100% {
+        color: rgb(1, 81, 255); /* Volta para a cor inicial */
+    }
+}

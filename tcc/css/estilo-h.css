@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    margin-top: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Alinhar itens verticalmente */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.btn p{
+    font-family: 'Times New Roman';
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.container .text {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.container .text h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+}
+
+#logo-image {
+    border-radius: 20px;
+    margin-left: 60px;
+}
+
+.cricle {
+    position: absolute;
+    bottom: 0; /* Alinhe a linha na parte inferior da tela */
+    width: 90%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(11, 6, 37, 0.966), rgba(23, 12, 77, 0.966), rgb(4, 6, 133), rgb(7, 10, 177));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.container .text p {
+    color: white;
+}
+
+.container .text a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: darkblue;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.container .text a:hover {
+    transform: translateY(-10px);
+}
+
+.sobre-site {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Altera a direção do flex para empilhar verticalmente */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-site p {
+    color: white;
+    font-size: 18px; /* Tamanho de fonte ajustado */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 20px; /* Adicione a margem superior desejada */
+}
+
+.sobre-site h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Estilo para a seção "GitHub" */
+#git {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.git {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.git img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Estilo para o nome do autor no GitHub */
+.name {
+    margin-top: 10px;
+}
+
+/* Estilo para o contêiner .gi */
+.gi {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Estilo para o cabeçalho "GitHub" dentro de .gi */
+.gi h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Estilo para o contêiner .gif-container */
+.gif-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ajuste de cores para links */
+.git a {
+    color: white;
+    text-decoration: none;
+}
